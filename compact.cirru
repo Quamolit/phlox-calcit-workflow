@@ -36,12 +36,9 @@
                   {} $ :position ([] 40 40)
               {}
                 :children $ {}
-                  :d $ comp-drag-point (>> states :d)
+                  :d $ comp-drag-point (>> states :d) (:position state)
+                    fn (position d!) (d! cursor $ assoc state :position position)
                     {}
-                      :x $ first (:position state)
-                      :y $ last (:position state)
-                      :on-change $ fn (x y d!)
-                        d! cursor $ assoc state :position ([] x y)
                 :render $ fn (dict)
                   g
                     {} (:x 0) (:y 0)
