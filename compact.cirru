@@ -1,6 +1,6 @@
 
 {} (:package |app)
-  :configs $ {} (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [] |/Users/chen/repo/quamolit/phlox.calcit/compact.cirru)
+  :configs $ {} (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [] |phlox.calcit/compact.cirru) (:version nil)
   :files $ {}
     |app.main $ {}
       :ns $ quote
