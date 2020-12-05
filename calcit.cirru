@@ -380,4 +380,4 @@
                   |D $ {} (:type :leaf) (:by |u0) (:at 1606370713438) (:text |;)
         :proc $ {} (:type :expr) (:by |u0) (:at 1606310745262) (:data $ {})
         :configs $ {} (:extension nil)
-  :configs $ {} (:extension |.cljs) (:output |src) (:port 6001) (:local-ui? false) (:compact-output? true) (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [] |phlox.calcit/compact.cirru)
+  :configs $ {} (:extension |.cljs) (:output |src) (:port 6001) (:local-ui? false) (:compact-output? true) (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [] |phlox/compact.cirru)
