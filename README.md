@@ -19,7 +19,7 @@ Originally Phlox as implemented based on ClojureScript and PIXI.js . However cur
 
 ### Workflow
 
-https://github.com/Quamolit/phlox-calcit-workflow
+https://github.com/calcit-lang/calcit-workflow
 
 ### License
 
