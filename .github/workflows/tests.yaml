@@ -1,0 +1,14 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: calcit-lang/calcit-once-action@0.0.5
