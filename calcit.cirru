@@ -14,11 +14,12 @@
             :data $ {}
               |T $ {} (:type :leaf) (:by |u0) (:at 1606310749711) (:text |defn)
               |j $ {} (:type :leaf) (:by |u0) (:at 1606310749711) (:text |main!)
-              |r $ {} (:type :expr) (:by |u0) (:at 1606310749711) (:data $ {})
+              |r $ {} (:type :expr) (:by |u0) (:at 1606310749711)
+                :data $ {}
               |v $ {} (:type :expr) (:by |u0) (:at 1607526383398)
                 :data $ {}
                   |T $ {} (:type :leaf) (:by |u0) (:at 1607526383967) (:text |echo)
-                  |j $ {} (:type :leaf) (:by |u0) (:at 1607526386393) (:text "|\"Started")
+                  |j $ {} (:type :leaf) (:by |u0) (:at 1625293397112) (:text "|\"Started.")
               |t $ {} (:type :expr) (:by |u0) (:at 1607526387394)
                 :data $ {}
                   |T $ {} (:type :leaf) (:by |u0) (:at 1607526390441) (:text |assert=)
@@ -32,11 +33,12 @@
             :data $ {}
               |T $ {} (:type :leaf) (:by |u0) (:at 1606310753106) (:text |defn)
               |j $ {} (:type :leaf) (:by |u0) (:at 1606310753106) (:text |reload!)
-              |r $ {} (:type :expr) (:by |u0) (:at 1606310753106) (:data $ {})
+              |r $ {} (:type :expr) (:by |u0) (:at 1606310753106)
+                :data $ {}
               |v $ {} (:type :expr) (:by |u0) (:at 1606310801441)
                 :data $ {}
                   |T $ {} (:type :leaf) (:by |u0) (:at 1606310803027) (:text |echo)
-                  |j $ {} (:type :leaf) (:by |u0) (:at 1606310804845) (:text "|\"Reload!")
+                  |j $ {} (:type :leaf) (:by |u0) (:at 1625293407488) (:text "|\"Reloaded.")
           |on-error $ {} (:type :expr) (:by |u0) (:at 1606310757107)
             :data $ {}
               |T $ {} (:type :leaf) (:by |u0) (:at 1606310757107) (:text |defn)
@@ -49,6 +51,8 @@
                   |T $ {} (:type :leaf) (:by |u0) (:at 1606311684125) (:text |draw-error-message)
                   |j $ {} (:type :leaf) (:by |u0) (:at 1606311685136) (:text |message)
                   |D $ {} (:type :leaf) (:by |u0) (:at 1606370713438) (:text |;)
-        :proc $ {} (:type :expr) (:by |u0) (:at 1606310745262) (:data $ {})
+        :proc $ {} (:type :expr) (:by |u0) (:at 1606310745262)
+          :data $ {}
         :configs $ {} (:extension nil)
-  :configs $ {} (:extension |.cljs) (:output |src) (:port 6001) (:local-ui? false) (:compact-output? true) (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [])
+  :configs $ {} (:extension |.cljs) (:output |src) (:port 6001) (:local-ui? false) (:compact-output? true) (:init-fn |app.main/main!) (:reload-fn |app.main/reload!)
+    :modules $ []
