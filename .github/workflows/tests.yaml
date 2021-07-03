@@ -10,6 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
 
     - name: ACTIONS_ALLOW_UNSECURE_COMMANDS
       id: ACTIONS_ALLOW_UNSECURE_COMMANDS
@@ -26,4 +27,6 @@ jobs:
       run: mkdir -p ~/.config/calcit/modules/ && cd ~/.config/calcit/modules/ && echo 'no deps'
 
     - name: "test"
-      run: env=ci cr -1
+      run: mode=ci cr -1
+
+    - run: mode=ci cr --emit-js -1 && yarn && yarn webpack && node ./js-out/bundle.js
