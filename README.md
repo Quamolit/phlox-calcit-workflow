@@ -14,7 +14,7 @@ cr -1 # run once
 cr # run and watch
 ```
 
-For JavaScript:
+run in JavaScript:
 
 ```bash
 cr --emit-js -1 # emit-js once
@@ -32,6 +32,14 @@ hot=true webpack --watch
 
 # run with hot reload
 node js-out/bundle.js
+```
+
+run tests:
+
+```bash
+mode=ci cr -1
+
+mode=ci node js-out/bundle.js
 ```
 
 ### Workflow
