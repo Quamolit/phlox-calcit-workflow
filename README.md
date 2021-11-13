@@ -42,6 +42,14 @@ mode=ci cr -1
 mode=ci node js-out/bundle.js
 ```
 
+### esbuild
+
+This demo provided Webpack for hot code replacement. To build, esbuild is a simpler tool:
+
+```bash
+esbuild main.js --bundle --outfile=js-out/bundle.js --platform=node
+```
+
 ### Workflow
 
 https://github.com/calcit-lang/calcit-workflow

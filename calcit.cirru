@@ -1,7 +1,7 @@
 
 {}
   :users $ {}
-    |u0 $ {} (:name |chen) (:id |u0) (:nickname |chen) (:avatar nil) (:password |d41d8cd98f00b204e9800998ecf8427e) (:theme :star-trail)
+    |u0 $ {} (:theme :star-trail) (:id |u0) (:name |chen) (:nickname |chen) (:avatar nil) (:password |d41d8cd98f00b204e9800998ecf8427e)
   :ir $ {} (:package |app)
     :files $ {}
       |app.main $ {}
@@ -19,6 +19,14 @@
                     |r $ {} (:type :expr) (:by |u0) (:at 1625340366421)
                       :data $ {}
                         |T $ {} (:type :leaf) (:by |u0) (:at 1625340368206) (:text |run-tests)
+                |r $ {} (:type :expr) (:by |u0) (:at 1635438174394)
+                  :data $ {}
+                    |T $ {} (:type :leaf) (:by |u0) (:at 1635438179295) (:text |calcit.std.time)
+                    |j $ {} (:type :leaf) (:by |u0) (:at 1635438177953) (:text |:refer)
+                    |r $ {} (:type :expr) (:by |u0) (:at 1635438180356)
+                      :data $ {}
+                        |T $ {} (:type :leaf) (:by |u0) (:at 1635438182183) (:text |set-interval)
+        :configs $ {} (:extension nil)
         :defs $ {}
           |main! $ {} (:type :expr) (:by |u0) (:at 1606310749711)
             :data $ {}
@@ -44,6 +52,30 @@
                     :data $ {}
                       |T $ {} (:type :leaf) (:by |u0) (:at 1625340412805) (:text |echo)
                       |j $ {} (:type :leaf) (:by |u0) (:at 1625340416431) (:text "||Run app")
+              |w $ {} (:type :expr) (:by |u0) (:at 1635438118793)
+                :data $ {}
+                  |T $ {} (:type :leaf) (:by |u0) (:at 1635438125503) (:text |set-interval)
+                  |b $ {} (:type :leaf) (:by |u0) (:at 1635438161035) (:text |2000)
+                  |j $ {} (:type :expr) (:by |u0) (:at 1635438126553)
+                    :data $ {}
+                      |T $ {} (:type :leaf) (:by |u0) (:at 1635438126814) (:text |fn)
+                      |j $ {} (:type :expr) (:by |u0) (:at 1635438127107)
+                        :data $ {}
+                      |r $ {} (:type :expr) (:by |u0) (:at 1635438127902)
+                        :data $ {}
+                          |T $ {} (:type :leaf) (:by |u0) (:at 1635438309621) (:text |calling-func)
+          |on-error $ {} (:type :expr) (:by |u0) (:at 1606310757107)
+            :data $ {}
+              |T $ {} (:type :leaf) (:by |u0) (:at 1606310757107) (:text |defn)
+              |j $ {} (:type :leaf) (:by |u0) (:at 1606310757107) (:text |on-error)
+              |r $ {} (:type :expr) (:by |u0) (:at 1606310757107)
+                :data $ {}
+                  |T $ {} (:type :leaf) (:by |u0) (:at 1606310780908) (:text |message)
+              |v $ {} (:type :expr) (:by |u0) (:at 1606311673317)
+                :data $ {}
+                  |D $ {} (:type :leaf) (:by |u0) (:at 1606370713438) (:text |;)
+                  |T $ {} (:type :leaf) (:by |u0) (:at 1606311684125) (:text |draw-error-message)
+                  |j $ {} (:type :leaf) (:by |u0) (:at 1606311685136) (:text |message)
           |reload! $ {} (:type :expr) (:by |u0) (:at 1606310753106)
             :data $ {}
               |T $ {} (:type :leaf) (:by |u0) (:at 1606310753106) (:text |defn)
@@ -54,21 +86,18 @@
                 :data $ {}
                   |T $ {} (:type :leaf) (:by |u0) (:at 1606310803027) (:text |echo)
                   |j $ {} (:type :leaf) (:by |u0) (:at 1625293407488) (:text "|\"Reloaded.")
-          |on-error $ {} (:type :expr) (:by |u0) (:at 1606310757107)
+          |calling-func $ {} (:type :expr) (:by |u0) (:at 1635438145038)
             :data $ {}
-              |T $ {} (:type :leaf) (:by |u0) (:at 1606310757107) (:text |defn)
-              |j $ {} (:type :leaf) (:by |u0) (:at 1606310757107) (:text |on-error)
-              |r $ {} (:type :expr) (:by |u0) (:at 1606310757107)
+              |T $ {} (:type :leaf) (:by |u0) (:at 1635438146706) (:text |defn)
+              |j $ {} (:type :leaf) (:by |u0) (:at 1635438145038) (:text |calling-func)
+              |r $ {} (:type :expr) (:by |u0) (:at 1635438145038)
                 :data $ {}
-                  |T $ {} (:type :leaf) (:by |u0) (:at 1606310780908) (:text |message)
-              |v $ {} (:type :expr) (:by |u0) (:at 1606311673317)
+              |v $ {} (:type :expr) (:by |u0) (:at 1635438147671)
                 :data $ {}
-                  |T $ {} (:type :leaf) (:by |u0) (:at 1606311684125) (:text |draw-error-message)
-                  |j $ {} (:type :leaf) (:by |u0) (:at 1606311685136) (:text |message)
-                  |D $ {} (:type :leaf) (:by |u0) (:at 1606370713438) (:text |;)
+                  |T $ {} (:type :leaf) (:by |u0) (:at 1635440602999) (:text |println)
+                  |j $ {} (:type :leaf) (:by |u0) (:at 1635438316806) (:text "|\"todo bcc")
         :proc $ {} (:type :expr) (:by |u0) (:at 1606310745262)
           :data $ {}
-        :configs $ {} (:extension nil)
       |app.test $ {}
         :ns $ {} (:type :expr) (:by |u0) (:at 1625339956346)
           :data $ {}
@@ -87,6 +116,7 @@
                         |j $ {} (:type :leaf) (:by |u0) (:at 1625340020648) (:text |testing)
                         |r $ {} (:type :leaf) (:by |u0) (:at 1625340021012) (:text |is)
                         |v $ {} (:type :leaf) (:by |u0) (:at 1625340040078) (:text |*quit-on-failure?)
+        :configs $ {}
         :defs $ {}
           |run-tests $ {} (:type :expr) (:by |u0) (:at 1625339970921)
             :data $ {}
@@ -94,14 +124,14 @@
               |j $ {} (:type :leaf) (:by |u0) (:at 1625339970921) (:text |run-tests)
               |r $ {} (:type :expr) (:by |u0) (:at 1625339970921)
                 :data $ {}
-              |v $ {} (:type :expr) (:by |u0) (:at 1625339973401)
-                :data $ {}
-                  |T $ {} (:type :leaf) (:by |u0) (:at 1625339982550) (:text |test-add)
               |t $ {} (:type :expr) (:by |u0) (:at 1625340033281)
                 :data $ {}
                   |T $ {} (:type :leaf) (:by |u0) (:at 1625340034982) (:text |reset!)
                   |j $ {} (:type :leaf) (:by |u0) (:at 1625340036265) (:text |*quit-on-failure?)
                   |r $ {} (:type :leaf) (:by |u0) (:at 1625340037959) (:text |true)
+              |v $ {} (:type :expr) (:by |u0) (:at 1625339973401)
+                :data $ {}
+                  |T $ {} (:type :leaf) (:by |u0) (:at 1625339982550) (:text |test-add)
           |test-add $ {} (:type :expr) (:by |u0) (:at 1625339983101)
             :data $ {}
               |T $ {} (:type :leaf) (:by |u0) (:at 1625339986557) (:text |deftest)
@@ -124,6 +154,9 @@
                               |r $ {} (:type :leaf) (:by |u0) (:at 1625340138662) (:text |1)
         :proc $ {} (:type :expr) (:by |u0) (:at 1625339956346)
           :data $ {}
-        :configs $ {}
-  :configs $ {} (:extension |.cljs) (:output |src) (:port 6001) (:local-ui? false) (:compact-output? true) (:init-fn |app.main/main!) (:reload-fn |app.main/reload!)
-    :modules $ [] |calcit-test/
+  :configs $ {} (:port 6001) (:init-fn |app.main/main!) (:reload-fn |app.main/reload!)
+    :modules $ [] |calcit-test/ |calcit.std/
+    :extension |.cljs
+    :output |src
+    :local-ui? false
+    :compact-output? true
