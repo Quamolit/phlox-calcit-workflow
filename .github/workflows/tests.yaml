@@ -10,26 +10,16 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - uses: actions/setup-node@v3
       with:
-        node-version: 18
+        node-version: 20
         cache: 'yarn'
 
-    - uses: supplypike/setup-bin@v3
-      with:
-        uri: 'https://github.com/calcit-lang/calcit/releases/download/0.8.0/cr'
-        name: 'cr'
-        version: '0.8.0'
-
-    - uses: supplypike/setup-bin@v3
-      with:
-        uri: 'https://github.com/calcit-lang/calcit/releases/download/0.8.0/caps'
-        name: 'caps'
-        version: '0.8.0'
+    - uses: calcit-lang/setup-cr@0.0.6
 
     - name: "test"
       run: caps --ci && cr -1 --entry test
 
-    - run: cr --emit-js -1 --entry test && yarn && node ./main.mjs
+    - run: cr -1 --entry test js && yarn && node ./main.mjs
